@@ -1,0 +1,32 @@
+{
+  "name": "jobsApplicationApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitTwisted/jobsApplicationApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitTwisted/jobsApplicationApp/issues"
+  },
+  "homepage": "https://github.com/gitTwisted/jobsApplicationApp#readme",
+  "dependencies": {
+    "@hapi/joi": "^16.1.7",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
