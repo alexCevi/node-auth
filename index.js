@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
-require('dotenv').config()
 const mongoose = require('mongoose');
 const dontenv = require('dotenv');
-var cors = require('cors');
+const cors = require('cors');
+require('dotenv').config()
 
 // cors policy
 app.use(cors());
@@ -12,7 +12,7 @@ app.use(cors());
 const authRoute = require('./routes/auth');
 const postRoute = require('./routes/posts');
 
-// connect to db
+// connect to db 
 mongoose.Promise = global.Promise;mongoose.connect(process.env.DB_CONNECT);
 
 // middlewares
