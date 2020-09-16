@@ -19,6 +19,7 @@
   "homepage": "https://github.com/gitTwisted/jobsApplicationApp#readme",
   "dependencies": {
     "@hapi/joi": "^16.1.7",
+    "@sendgrid/mail": "^7.2.5",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",

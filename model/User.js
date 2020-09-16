@@ -19,10 +19,13 @@ const userSchema = new mongoose.Schema({
         max: 2000,
         min: 6
     },
-    date: {
+    createdAt: {
         type: Date,
         default: Date.now
-    }
+    },
+    resetPasswordCode: Number,
+    resetPasswordExpDate: Date,
+
 });
 
 module.exports = mongoose.model('User', userSchema);

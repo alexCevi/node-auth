@@ -12,7 +12,7 @@ app.use(cors());
 
 // importing routes
 const authRoute = require('./routes/auth');
-const postRoute = require('./routes/users');
+const userRoute = require('./routes/users');
 
 // connect to db 
 mongoose.Promise = global.Promise;mongoose.connect(process.env.DB_CONNECT, {useNewUrlParser: true, useUnifiedTopology: true});
@@ -22,7 +22,7 @@ app.use(express.json());
 
 // route middlewares
 app.use('/auth', authRoute);
-app.use('/users', postRoute); // for testing the validation
+app.use('/users', userRoute); // for testing the validation
 
 
 app.listen(port, () => console.log(`Server is up and running on port ${port}`));
